@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import '@angular/localize/init';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-xi18n-dup';
+  title = $localize`Some text`;
 }
